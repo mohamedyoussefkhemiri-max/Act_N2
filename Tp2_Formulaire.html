@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechDays 2026</title>
+</head>
+<body>
+    <img src="images/ImH.png" alt="image" srcset="">
+    <h1>TechDays 2026</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Information personnelles</legend>
+            <label for="nom">*Nom :</label>
+            <input type="text" name="Nom" id="Nom" placeholder="Ex. Ben Ali" required minlength="2" maxlength="30">
+            <br>
+            <label for="Prenom">*Prenom :</label>
+            <input type="text" name="Prenom" id="Prenom" placeholder="Ex. Ahmed" required minlength="2" maxlength="30">
+            <br>
+            <label for="mail">*Adresse e-mail :</label>
+            <input type="email" name="mail" id="mail" placeholder="Exemple@email.com" required>
+            <br>
+            <label for="tel">*Telephone :</label>
+            <input type="tel" name="tel" id="tel" placeholder="EX. 24123456" required>
+            <br>
+            <label for="ds">*Date de naissance :</label>
+            <input type="date" name="ds" id="ds" required>
+            <br>
+            <label for="ha">Heuere d'arriver</label>
+            <input type="time" name="ha" id="ha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Identification</legend>
+            <label for="id">*Identifiant étudiant :</label>
+            <input type="number" name="id" id="id" required placeholder="Ex.24123456" maxlength="8" minlength="8">
+            <br>
+            <label for="mp">*Mot de Passe :</label>
+            <input type="password" name="mp" id="mp" required placeholder="8 caractere minimum" minlength="8" maxlength="20">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formation</legend>
+            <label for="fi">*Filiére :</label>
+            <select name="fi" id="fi" required>
+                <option value="f1" disabled>-- Choisir une filière--</option>
+                <option value="f2">DSI</option>
+                <option value="f3">TI</option>
+                <option value="f4">SE</option>
+                <option value="f5">MI</option>
+                <option value="f6">Autre</option>
+            </select>
+            <br>
+            <label for="Niveau">Nibeau :</label>
+            <input type="radio" name="n1" id="n1">1ere année
+            <input type="radio" name="n2" id="n2">2éme année
+            <input type="radio" name="n3" id="n3">3éme année
+        </fieldset>
+
+        <fieldset>
+            <legend>Participation</legend>
+            <label for="tp">Type de participation :</label>
+            <input type="radio" name="tp1" id="tp1">Presentiel
+            <input type="radio" name="tp2" id="tp2">à distance
+            <br>
+            <label for="">Ateliers Souhaités :</label>
+            <input type="checkbox" name="hc" id="hc">HTML5/CSS3
+            <input type="checkbox" name="jv" id="jv">JavaScript
+            <input type="checkbox" name="git" id="git">Git/GitHub
+            <input type="checkbox" name="bo" id="bo">Bootstrap
+            <input type="checkbox" name="ai" id="ai">Intelligence Artificielle
+            <br>
+            <label for="nbr">Nombre de personnes accompagnants :</label>
+            <input type="number" name="nbre" id="nbre" value="0"> 
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Préférence</legend>
+            <label for="tweb">Niveau d'intéret pour les technologie Web :</label>
+            <input type="range" name="tweb" id="tweb">
+            <div>0-Faible 10-Trés élévé</div>
+            <br>
+            <label for="tech">Tecchnologie que vous Souhaitéz découvrir :</label>
+            <input type="text" placeholder="Ex. react bootstrap...">
+            <br>
+            <label for="site"> site web personelle </label> 
+            <input type="text" placeholder="https://ww.exemple.com">
+            <br>            
+            <label for="col"> couleur prefere </label>
+            <input type="color" value="#2563EB" >
+        </fieldset>
+
+        <fieldset>
+            <legend>documents </legend>
+            <label for="CV">CV :</label>
+            <input type="file" name="CV" id="CV" value="choisir"> 
+            <small> format accepte : pdf  </small>
+            <br>
+            <label for="df"> documents complementaires </label>
+            <input type="file" value="df"> <small> format accepte PDF,JPG,PNG </small> 
+        </fieldset>
+
+        <fieldset>
+            <legend> inforamtion complementaires</legend>
+            <label for="ppc"> *pourquoi vous souhatez participer ?</label>
+            <textarea name="ppc" id="ppc" minlength="10" maxlength="300" placeholder="presentez brievemetn vos motivations"></textarea> <small>  entre 10 et 300 carateres </small> 
+            <br>
+            <input type="checkbox" name="acc" id="acc"> j'accepte les conditions de participation
+        </fieldset>
+
+        <fieldset>
+            <legend>informations sur l'evennement</legend>
+            <label for="enen"> evennement</label>
+            <input type="text" value="techdays 2026" >
+            <br>
+            <label for="ville"> ville </label>
+            <input type="text" value="Tunis">
+        </fieldset>
+        <input type="submit" value="valider l'inscription"> 
+        <input type="reset" value="reinisialiser ">
+        <p>© 2026 techdays -- journee de technologie web</p>
+    </form>
+</body>
+</html>
